@@ -128,7 +128,7 @@ describe('client-side api', function() {
                     return window.dashboardApi.config;
                 })
                 .then(function(ret) {
-                    expect(ret.value.login).to.not.have.property('sessionSecret');
+                    expect(ret.value.auth).to.not.have.property('sessionSecret');
 
                     done();
                 });
@@ -231,7 +231,7 @@ describe('server-side api', function() {
         });
 
         it('shouldn\'t reveal sensitive information', function() {
-            expect(e.apis.extension.config.login).to.not.have.property('sessionSecret');
+            expect(e.apis.extension.config.auth).to.not.have.property('sessionSecret');
         });
 
         it('shouldn\'t be writable', function() {

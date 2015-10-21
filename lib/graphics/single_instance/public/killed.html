@@ -18,9 +18,9 @@
     </div>
 
     <script>
-        // Copy-pasted from lib/login/public/QueryString.js
-        // I copy-pasted it because the file is only served when login security is enabled,
-        // and singleInstance can be active when login security is not.
+        // Copy-pasted from lib/auth/public/QueryString.js
+        // I copy-pasted it because the file is only served when authentication is enabled,
+        // and singleInstance can be active when authentication is not.
         // Definitely need to make this DRYer.
         var qs = (function(a) {
             if (a == "") return {};

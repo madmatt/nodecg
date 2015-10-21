@@ -57,7 +57,7 @@ html(lang='en')
         script(src='/socket.io/socket.io.js')
         script(type='text/javascript').
             var url = new Url;
-            window.token = url.query.key || Cookies.get('socketToken');
+            window.token = url.query.key || Cookies.get('token');
             if (window.token) {
                 window.socket = io.connect('//' + window.ncgConfig.baseURL + '/', {
                     query: 'token=' + window.token
@@ -105,7 +105,7 @@ html(lang='en')
                             span(route='/') Dashboard
                             span(route='/graphics') Graphics
                             span(route='/settings') Settings
-                    if ncgConfig.login.enabled
+                    if ncgConfig.auth.enabled
                         paper-icon-button.paper-font-button#logout(icon='exit-to-app', alt='Sign Out')
                 more-route-selector
                     iron-pages#ncg-pages.layout.vertical
