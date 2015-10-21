@@ -40,8 +40,6 @@
     "obs-remote": "^1.0.1",
     "parse-authors": "^0.2.2",
     "passport": "^0.2.0",
-    "passport-steam": "^0.1.6",
-    "passport-twitch": "^1.0.1",
     "q": "^1.4.1",
     "request": "^2.64.0",
     "semver": "^5.0.3",
