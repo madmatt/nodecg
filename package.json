@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "aliasify": "^1.7.2",
+    "bcrypt": "^0.8.5",
     "body-parser": "^1.14.1",
     "bower": "^1.5.3",
     "brfs": "^1.4.1",
@@ -40,6 +41,7 @@
     "obs-remote": "^1.0.1",
     "parse-authors": "^0.2.2",
     "passport": "^0.2.0",
+    "passport-local": "^1.0.0",
     "q": "^1.4.1",
     "request": "^2.64.0",
     "semver": "^5.0.3",
